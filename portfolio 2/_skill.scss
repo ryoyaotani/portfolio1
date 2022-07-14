@@ -1,0 +1,49 @@
+.skills{
+    margin-bottom: 5%;
+   
+    h1{
+        font-size: 4rem;
+        margin-bottom: 5%;
+        text-align: center;
+        font-family: 'Sansita Swashed', cursive;
+        color: rgb(58, 197, 243,);
+    }
+}
+
+.fade {
+    transition: all 5000ms;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0px, 50px);
+  }
+  
+  .fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0px);
+  } 
+
+.skillsFlex{
+    display: flex;
+    justify-content: space-around;
+    @include sp-screen{
+     flex-direction: column;  
+     align-items: center;
+    }
+
+    .skill{
+       
+
+        h2{
+            font-size: 1.7rem;
+            color: rgb(23, 159, 204);
+        }
+
+        li{
+            font-size: 1.5rem;
+            line-height: 3rem;
+            list-style-position: inside;
+            color: rgba(58, 197, 243, 0.611);
+        }
+    }
+}

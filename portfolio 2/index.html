@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- google fontsリンク -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/cd732d0954.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>portfolio</title>
+</head>
+
+<body>
+    <!-- ヘッダー、アバウト （コンテンツを固定にする　ハンバーガメニュー）-->
+    <header>
+        <ul class="headerList">
+            <li><a href="#aboutMe">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="globalMenuSp">
+            <ul>
+                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Topに戻るボタン -->
+        <div id="page_top"><a href="#"><i class="fa-solid fa-angles-up topBtn"></i></a>
+    </header>
+    <!-- サイトの概要 -->
+    <section class="aboutSite">
+        <h1>About this site</h1>
+        <p>このサイトはエンジニア初学者の大谷 凌也のポートフォリオサイトです。<br>
+            私がどのような人物なのか？これまでに手がけた制作物、身につけたスキルなどを簡単にまとめています。<br>
+            このサイトを見て下さった皆様に私のことをもっと深く知ってほしいと思い作りました。
+        </p>
+    </section>
+    <!-- 自己紹介 （フェードイン　フェードアウト）-->
+    <section class="aboutMe" id="aboutMe">
+        <!-- プロフィール -->
+        <h1>About me</h1>
+        <div class="profile">
+            <h2>Profile</h2>
+            <div class="profileContents">
+                <img src="./assets/img/profile.jpeg" alt="">
+                <p>1995,09,01生まれ<br>兵庫県出身<br>機械系エンジニアを経験した後、アパレル業を経て26歳で働く環境や場所に縛られたくないと思い、web系エンジニアになろうと決意する。</p>
+            </div>
+        </div>
+        <!-- 趣味 -->
+        <div class="hobby">
+            <h2>Hobby</h2>
+            <div class="hobbyContentsFlex">
+                <div class="hobbyContents">
+                    <h3>Basketball</h3>
+                    <img src="./assets/img/hobby/basket.jpeg" alt="">
+                    <p>学生の頃からずっとプレイしてます。学生の頃は下級生の時でも上級生とプレイしていましたが、今では周りについて行くのがやっとです…</p>
+                </div>
+                <div class="hobbyContents">
+                    <h3>Hiking</h3>
+                    <img src="./assets/img/hobby/hiking.jpeg" alt="">
+                    <p>約2年前からコロナの影響で運動不足になった事がきっかけで始めました。頂上に登った時の爽快感がたまらなくて多い時で週1ペースで登山しています。</p>
+                </div>
+                <div class="hobbyContents">
+                    <h3>Comic&Animation</h3>
+                    <img src="./assets/img/hobby/comic.jpeg" alt="">
+                    <p>子供の頃から漫画やアニメが好きで良く見てます。特に週刊少年ジャンプが好きで小学生の頃からずっと購読してました。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills 画面がその高さまで来たらフェードイン -->
+    <section class="skills" id="skills">
+        <h1>Skills</h1>
+        <div class="skillsFlex fade fade-in">
+            <div class="skill">
+                <h2>FRONTEND SKILLS</h2>
+                <ol>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                    <li>HTML5/CSS3/SASS</li>
+                </ol>
+            </div>
+            <div class="skill">
+                <h2>BACKEND SKILLS</h2>
+                <ol>
+                    <li>PHP</li>
+                    <li>WORDPRESS</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- worksセクション モーダル -->
+    <section class="works" id="works">
+        <h1>Works</h1>
+        <div class="worksFlex">
+            <div class="sample-item picJQ">
+                <a class="js-modal-open" data-target="modal01">
+                    <img src="./assets/img/js_pic/works_main.png" alt="">
+                </a>
+                <p>jQuery</p>
+            </div>
+
+            <div class="sample-item picPHP">
+                <a class="js-modal-open" data-target="modal02">
+                    <img src="./assets/img/php_pic/main_pic.png" alt="">
+                </a>
+                <p>PHP</p>
+            </div>
+
+            <div class="sample-item picAPI">
+                <a class="js-modal-open" data-target="modal03">
+                    <img src="./assets/img/api_pic/main.png" alt="">
+                </a>
+                <p>API</p>
+            </div>
+            <div class="sample-item">
+                <a class="js-modal-open" data-target="modal04">
+                    <img src="./assets/img/wordpress_pic/main.png" alt="">
+                </a>
+                <p>WORDPRESS</p>
+            </div>
+            <!-- モーダル -->
+            <div id="modal01" class="modal js-modal">
+                <div class="modal__bg js-modal-close"><i class="fa-solid fa-x batu"></i></div>
+                <div class="modal__content">
+                    <div class="modalText">
+                        <h2>jQuery</h2>
+                        <p>jQueryでコンテンツに動きをつけることを目的として制作したサイトです。
+                            <br>世界観は私自身がアニメ好きという事もあってジョジョの奇妙な冒険にしてみました。
+                            <br> 主な動きとしては、サイトを開いたときのローディング画面、左上のハンバーガーメニューをクリックした時に画面の左側からメニューが出るようになる、画像がクリックでスライドする、inputタグがアコーディオンなってる、topに戻るボタンを押すとスクロールして最初に戻る。などの動きを実装しました。
+
+                        </p>
+                    </div>
+
+                    <div class="modalImg-flex">
+                        <img src="./assets/img/js_pic/roding.png" alt="">
+                        <img src="./assets/img/js_pic/slide.png" alt="">
+                        <img src="./assets/img/js_pic/accordion.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal02" class="modal js-modal">
+                <div class="modal__bg js-modal-close"><i class="fa-solid fa-x batu"></i></div>
+                <div class="modal__content">
+                    <div class="modalText">
+                        <h2>PHP</h2>
+                        <p>PHPを用いてサーバーサイド言語を理解するために制作しました。
+                            <br>コンセプトは私の好きなスポットを紹介するサイトです。画像が自動でスライドするようにしており、その画像をクリックするとスポットの詳細が書いてある別ページに飛ぶようにししてます。
+                            <br>お問い合わせ実装し、inputタグに入力した文字を実際に別のページに反映させる事に成功したが、なぜそうなったのか認識するのに苦労しました。
+                            <br>SQLを使用して取得したデータをCRUD処理もできます。
+                        </p>
+                    </div>
+                    <div class="modalImg-flex">
+                        <img src="./assets/img/php_pic/contact.png" alt="">
+                        <img src="./assets/img/php_pic/thanks.png" alt="">
+                        <img src="./assets/img/php_pic/anotherpage.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal03" class="modal js-modal">
+                <div class="modal__bg js-modal-close"><i class="fa-solid fa-x batu"></i></div>
+                <div class="modal__content">
+                    <div class="modalText">
+                        <h2>API</h2>
+                        <p>APIを取得し、それを利用したサイトを作ることを目的に作成しました。
+                            <br>今回使用したAPIが全国の駅名だったので、山手線のデータを取得してすごろくゲームを作りました。
+                            <br>普通のサイトではなかったのでコンテンツのレイアウト、JSでサイコロの数値を取得してその数値をマス目に紐付けるのが苦労しました。ちなみにサイコロも自作です。
+                        </p>
+                    </div>
+                    <div class="modalImg-flex">
+                        <img src="./assets/img/api_pic/game.png" alt="">
+                        <img src="./assets/img/api_pic/readbtn.png" alt="">
+                        <img src="./assets/img/api_pic/explanation.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="modal04" class="modal js-modal">
+                <div class="modal__bg js-modal-close"><i class="fa-solid fa-x batu"></i></div>
+                <div class="modal__content">
+                    <div class="modalText">
+                        <h2>WORDPRESS</h2>
+                        <p>WORDPRESSのテーマ化を目的に作成しました。
+                            <br>jQueryやSASSにプラスでWORDPRESSのプラグインを使い、メニューバー・画像のスライド・投稿記事など誰でも簡単にコンテンツの内容を変更できるようにするのを実装しました。
+                            <br>ペアワークだった事もありコード設計に悩んだが、タスク(Googleスプレッドシート)・ソース(git)などの開発環境の設定・管理が出来たのもとても良い経験でした。
+                            <br>レスポンシブ対応も完璧です。
+                        </p>
+                    </div>
+                    <div class="modalImg-flex">
+                        <img src="./assets/img/wordpress_pic/pcview.png" alt="">
+                        <img src="./assets/img/wordpress_pic/contents.png" alt="">
+                        <img src="./assets/img/wordpress_pic/responsive.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- モーダル終了 -->
+        </div>
+    </section>
+    <!--コンタクト　ホバーで浮き出る -->
+    <section class="contact" id="contact">
+        <h1>Contact</h1>
+        <p>お問い合わせを頂ける際は、下記のSNSのDMからよろしくお願い致します。</p>
+        <ul>
+            <li><a href="https://www.instagram.com/er9108/" target="blank"><img src="./assets/img/contact_inst.png"
+                        alt=""></a></li>
+            <li><a href="https://mobile.twitter.com/r9108" target="blank"><img src="./assets/img/contact_twitter.png"
+                        alt=""></a></li>
+
+        </ul>
+
+    </section>
+    <footer>
+        <p><small>&copf;</small>2022 ryoya otani Portfolio</p>
+    </footer>
+    <!-- JQueryリンク -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JSリンク -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

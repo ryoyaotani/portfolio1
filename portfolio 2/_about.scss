@@ -1,0 +1,119 @@
+.aboutSite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+    height: 100vh;
+
+    h1{
+        font-size: 5rem;
+        margin-bottom: 5%; 
+        font-family: 'Sansita Swashed', cursive;
+        color: rgb(58, 197, 243,);
+
+        @include minsp-screen{
+             font-size: 3.3rem;
+        }
+    }
+
+    p{
+        font-size: 1.3rem;
+        line-height: 2rem;
+        color: rgba(58, 197, 243, 0.611);
+    }
+}
+
+.aboutMe{
+    text-align: center;
+    margin-bottom: 5%;
+
+    h1{
+        font-size: 4rem;
+        margin-bottom: 5%;  
+        font-family: 'Sansita Swashed', cursive;
+        color: rgb(58, 197, 243,);
+    }
+
+    .profile{
+        margin-bottom: 5%;
+        // background-color: rgba(240, 248, 255, 0.474);
+        padding: 20px 0;
+        
+
+    h2{
+        margin-bottom: 3%;
+        font-size: 1.7rem;
+        color: rgb(23, 159, 204);
+    }
+
+    img{
+        border-radius: 50%;
+    }
+    // プロフィール
+    .profileContents{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include sp-screen{
+            flex-direction: column;
+        }
+
+        img{
+            margin-right: 10%;
+            @include sp-screen{
+                margin: 5% auto;
+            }
+        }
+
+        p{
+            width: 20%;
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            color: rgba(58, 197, 243, 0.611);
+            @include sp-screen{
+                width: 80vw;
+            }
+        }
+           
+    }
+    }
+    // 趣味
+    .hobby{
+        h2{
+            margin-bottom: 3%;
+            font-size: 1.7rem;
+            color: rgb(23, 159, 204);
+        }
+  
+    .hobbyContentsFlex{
+        position: relative;
+        width: 240px;
+        margin: 0 auto;
+        height: 410px;
+
+        .hobbyContents{
+            // border: solid white;
+            position: absolute;
+            margin: 0 auto;
+            padding-bottom: 5%;
+            
+            h3{
+                margin-bottom: 5%;
+                font-size: 1.5rem;
+                color: rgb(23, 159, 204);
+            }
+
+            img{
+                margin-bottom: 5%;
+                border-radius: 20px;
+            }
+
+            p{
+                line-height: 1.5rem;
+                color: rgba(58, 197, 243, 0.611);
+            }
+        }
+    }
+}
+}

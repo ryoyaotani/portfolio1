@@ -1,0 +1,52 @@
+.contact{
+    margin-bottom: 5%;
+    text-align: center;
+   
+    h1{
+        font-size: 4rem;
+        margin-bottom: 5%;
+        font-family: 'Sansita Swashed', cursive;
+        color: rgb(58, 197, 243,);
+
+    }
+
+    p{
+        margin-bottom: 5%;
+        color: rgba(58, 197, 243, 0.611);
+    }
+
+      
+    ul{
+        display: flex;
+        justify-content: center;
+
+
+        li{
+            width: 120px;
+            margin: 0 5%;
+
+            @keyframes pulse {
+                25% {
+                  transform: scale(1.1);
+                }
+              
+                75% {
+                  transform: scale(.9);
+                }
+            }
+                  
+                  img {
+                    display: inline-block;
+                  
+                    &:hover {
+                      animation-name: pulse;
+                      animation-duration: 1s;
+                      animation-timing-function: linear;
+                      animation-iteration-count: infinite;
+                    }
+                  }
+            
+        }
+    }
+   
+}
